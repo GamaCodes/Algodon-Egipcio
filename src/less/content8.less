@@ -1,0 +1,133 @@
+@content8: content8;
+.@{content8}-wrapper {
+  &.home-page-wrapper {
+    overflow: initial;
+    width: ~"calc(100% - 112px)";
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 30px #333;
+    margin-bottom: 2rem;
+    background: #fff;
+    & .home-page {
+      margin-top: -220px;
+      padding: 64px 24px;
+      overflow: hidden;
+    }
+  }
+  .content-wrapper {
+    margin-top: 72px;
+    .@{content8}-block-wrapper {
+      margin-bottom: 60px;
+    }
+    .@{content8}-block {
+      width: 100%;
+      max-width: 192px;
+      margin: auto;
+    }
+    .@{content8}-img {
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      img {
+        width: 100%;
+        display: block;
+        &[src=""] {
+          background: linear-gradient(to top right, #d6defc, #fff);
+          padding-bottom: 100%;
+        }
+      }
+    }
+    .@{content8}-title {
+      font-size: 20px;
+      color: #0d1a26;
+      font-weight: 400;
+      margin: 24px auto 8px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .@{content8}-content {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 14px;
+      color: #697b8c;
+    }
+  }
+}
+
+.ant-col-md-8 {
+  text-align: center !important;
+}
+
+.feature-8-title {
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+}
+
+.feature-8-title h1{
+  color: #845F1D !important;
+  filter: drop-shadow(3px 3px 5px #000);
+  font-size: 4rem!important;
+}
+
+.content0-feat-cont {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.content-section {
+  width: 60vw;
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.content0-variant-ti {
+  font-family: 'Tangerine', cursive;
+  font-size: 3rem!important;
+  color: #845F1D !important;
+}
+
+.value-content8 {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.value-content8-p {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.content-bg {
+  background-color: black;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .@{content8}-wrapper.home-page-wrapper {
+    padding-bottom: 0;
+    box-shadow: none;
+    width: 100%;
+    .@{content8} {
+      &.home-page {
+        margin: auto;
+        padding-bottom: 0;
+      }
+    }
+    .content-wrapper {
+      .@{content8}-block {
+        max-width: 240px;
+      }
+    }
+  }
+  .content-section {
+    width: 80vw;
+  }
+  .value-content8-p {
+    width: 80%;
+  }
+}
